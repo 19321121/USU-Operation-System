@@ -1,0 +1,25 @@
+Quality Requirements for USU Student App
+
+Quality requirements for Data Encryption
+
+Functional Requirement:
+The system shall encrypt all sensitive user information, including profile data (name, address, contact details), passwords and membership information.
+
+Quality Requirement (Security):
+Sensitive information must be encrypted both in transit and at rest using industry-standard encryption protocols (e.g. TLS for transmission and AES for storage).
+
+Rationale:
+Protecting user data is essential to comply with privacy regulations and to maintain trust in the USU Student App. Without encryption, attackers could intercept or compromise user details
+
+Quality requirements for Event Information Management 
+
+Functional Requirement:
+The system shall allow users to view, search and interact with event information, including schedules, venues and participation options.
+
+Quality Requirement (Availability and Reliability):
+Event information must be available with a system uptime of at least 99.5%.
+Updates to event data should be reflected in the app within 2 minutes of being added or modified by administrators.
+The system must maintain daily backups of event and membership data to support recovery in case of failure.
+
+Rationale:
+Students depend on the app for timely and accurate event information. High availability, responsiveness and reliability ensure the system remains useful for event planning and engagement.
