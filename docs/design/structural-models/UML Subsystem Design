@@ -1,0 +1,49 @@
+UML Subsystem Design (USU Operation System)
+
+Functional Requirement:
+The system shall support modular design through subsystems representing major functionalities, including user management, event management, feedback and review system, data security and backup.
+
+Subsystem 1: User Management
+
+Purpose: Handles creation, update and deletion of user profiles. Manages user authentication and authorisation.
+Key Components:
+User profile class (name, address, contact details, membership ID)
+Authentication handler (login, password encryption, session control)
+Relationships:
+Communicates with data security subsystem for encryption and password protection.
+Provides authenticated user data to event and feedback subsystems.
+
+Subsystem 2: Event Management
+
+Purpose: Allows users to view, create and register for events. Administrators can modify or remove events.
+Key Components:
+Event class (title, description, date, location)
+Event manager (handles CRUD operations on events)
+Poll handler for event feedback and attendance surveys.
+Relationships:
+Linked to user management subsystem for attendee data.
+Connected to data backup subsystem for event history preservation.
+
+Subsystem 3: Feedback and Review System
+
+Purpose: Allows users to submit, flag and analyse feedback or reviews related to events or services.
+Key Components:
+Feedback class (rating, comment, timestamp)
+Review moderator (flags, inappropriate reviews)
+Analytics module (identifies feedback trends).
+Relationships:
+Uses user management subsystem for author identification.
+Sends analysis summarises to administrators.
+
+Subsystem 4: Data Security and Backup
+
+Purpose: Ensures confidentiality, integrity and availability of user and event data through encryption and backups.
+Key Components:
+Encryption service (AES for stored data, TLS for data in transit).
+Backup scheduler (daily backups of event, membership and feedback data).
+Relationships:
+Protects all subsystems’ stored and transmitted data.
+Works with event and user subsystems to ensure data recovery.
+
+Rationale:
+Dividing the system into modular subsystems increases maintainability, supports scalability and allows individual testing of components. The use of UML diagrams (to be designed in Papyrus) will visually represent class relationships, data flows and subsystem interactions.
