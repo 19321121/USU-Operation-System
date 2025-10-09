@@ -1,0 +1,40 @@
+Week 1 - Meeting Minutes
+
+Topic: Assigning Subsystems
+Date: Friday 26/09/2025
+Time: 12pm - 1pm
+Group Leader: Michael (temporary, leaders will be rotated)
+Attendance: Curran, Michael
+Absent: Maxwell, Edan
+
+Discussion
+- Responsibilities of each subsystem were assigned:
+  - Curran - Student Union Management System
+  - Michael - USU Student App
+  - Edan - Society Leader App (through Google Chat)
+  - Maxwell - USU Operation System (through Google Chat)
+
+Coursework Functional Requirements Discussed
+- Create and manage profile (name, address, etc.)
+- Data encryption for sensitive information
+- Secure passwords
+- Backups
+- Respond to reviews
+- Flag inappropriate reviews
+- Analyse feedback trends
+
+Data Required
+- USU Student App:
+  - Event information
+  - Polls
+  - Membership data
+
+- Student Union Management System:
+  - Studennt activity data
+  - Feedback
+
+After meeting
+- Each member will do further research on their subsystem and discuss it in the next meeting.
+
+Issues to be solved
+- Absences of members
