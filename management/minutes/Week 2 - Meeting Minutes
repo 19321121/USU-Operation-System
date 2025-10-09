@@ -1,0 +1,46 @@
+Week 2 - Meeting Agenda
+
+Topic: Analysing Quality Requirements
+Date: Friday 03/10/2025
+Time: 12pm - 1pm
+Group Leader: Michael (temporary, leaders will be rotated)
+Attendance: Curran, Michael
+Absent: Maxwell, Edan
+
+Discussion
+- Discussed and reviewed quality requirements for each allocated subsystem.
+
+USU Student App - Quality Requirements
+- Security and Privacy Protection:
+  - Secure login using university credentials.
+  - Protect and encrypt student data (name, student ID, email).
+
+Performance:
+- App should start instantly for user interaction.
+- Ensure smooth operation with no glitches or bugs.
+
+Reliability:
+- Available to students during the semester.
+- Function across all internet networks.
+- Developers to detect and resolve issues promptly.
+
+Scalability:
+- Support all students at all times.
+- Enable addition of more features for increased interaction.
+
+Student Union Mangement System - Quality Requirements
+- Data protection (complex but memorable passwords).  
+- Scalability to accommodate increasing users.  
+- Event availability.  
+- User interface designed for union officers.  
+- Maintainability for future developers.  
+- Functionality including membership management, event scheduling, and voting.  
+- Reports for activities and budget.  
+- Data backups to prevent loss and ensure management continuity.
+
+After Meeting
+- Begin planning UML diagram models for each subsystem.  
+- Familiarise team with Papyrus tool for creating diagrams.
+
+Issues to be solved
+- Absences of members
