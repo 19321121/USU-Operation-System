@@ -1,0 +1,65 @@
+Subsystem Architecture (USU Operation System)
+
+Overview
+
+This architectural design defines the internal structure of the USU Operation System in the overall USU federation project. It follows a “microservices architecture”, where each component provides APIs for communication with other subsystems.
+
+Components and Interfaces
+
+1. User Management Service
+
+Provides:
+- IUserAuth (login, logout, token validation)
+- IUserProfile (create/update/view profiles)
+
+Requires:
+- IDataSecurity (encryption, password hashing)
+
+Description:
+Manages authentication and authorisation of USU officers and integrates with Data Security Service to protect credentials.
+
+2. Event Management Service
+
+Provides:
+- IEventControl (create, edit, delete events)
+	- IEventAccess (list, search, view events)
+	
+	Requires:
+- IUserAuth (verify organiser permissions)
+- IBackup (save historical event data)
+
+Description:
+Allows officers to manage events, polls and attendance records.
+
+3. Feedback and Review Service
+
+Provides:
+- IFeedback (submit, flag, delete feedback)
+- IAnalytics (generate feedback summaries
+
+Requires:
+- IUserProfile (link feedback to users)
+- IDataSecurity (ensure privacy of responses)
+
+Description:
+Collects and analyses reviews about USU activities; integrates with other services to maintain integrity and anonymity.
+
+4. Data Security and Backup Service
+
+Provides:
+- IDataSecurity (AES encryption, TLS communication)
+- IBackup (daily backup, recovery tools)
+
+Requires:
+None
+
+Description:
+Maintains confidentiality and integrity of stored and transmitted data across all services.
+
+External Interactions
+- Connects to “Student Union Management System” for event coordination.
+- Exchanges aggregated data with “USU Student App” for event listings and feedback display.
+
+Rationale
+Using separate components improves scalability and maintainability.
+Each microservice can evolve independently, supporting secure APIs and modular updates.
